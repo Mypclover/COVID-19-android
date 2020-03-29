@@ -15,8 +15,10 @@
     <string name="confirmed">Confirmed</string>
     <string name="recovered">Recovered</string>
     <string name="deaths">Deaths</string>
+    <string name="todaydeaths">Today Deaths</string>
     <string name="active">Active</string>
     <string name="keterangan">Info :</string>
+    <string name="indiastats">Stats about India:</string>
     <string name="world_summary_data">World Summary Data</string>
     <string name="from_corona">From Covid-19</string>
     <string name="last_update">Last Update</string>

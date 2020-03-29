@@ -69,24 +69,36 @@
 
     </LinearLayout>
 
-    <!--<RelativeLayout
+    <LinearLayout
+        android:id="@+id/heading"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/llKet">
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_below="@id/llKet">
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/listRecycler"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scrollbars="vertical" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:text="@string/keterangan"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
 
-    </RelativeLayout>-->
+        <ImageView
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:layout_marginEnd="2dp"
+            android:src="@drawable/ic_trending_up" />
+
+    </LinearLayout>
     <LinearLayout
         android:id="@+id/content"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_below="@id/llKet">
+        android:layout_below="@id/heading">
 
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/confirmed_card"
@@ -129,13 +141,6 @@
                         tools:text="200,000" />
                 </LinearLayout>
 
-                <!--<com.github.mikephil.charting.charts.LineChart
-                    android:id="@+id/confirmed_chart"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="bottom"
-                    android:layout_margin="@dimen/margin_normal"
-                    android:visibility="invisible" />-->
 
             </FrameLayout>
 
@@ -241,6 +246,102 @@
                         android:layout_gravity="bottom"
                         android:visibility="invisible"
                         android:layout_margin="@dimen/margin_normal" />
+                </FrameLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/third_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/confirmed_card">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card_active"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:layout_marginBottom="@dimen/margin_normal"
+                android:layout_weight="1"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/TextAppearance.Divoc.CardHeadline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_normal"
+                        android:layout_marginTop="@dimen/margin_normal"
+                        android:layout_marginEnd="@dimen/margin_normal"
+                        android:text="@string/active"
+                        android:textColor="@color/android_green" />
+
+                    <TextView
+                        android:id="@+id/active_textview"
+                        style="@style/TextAppearance.Divoc.SmallCardBody"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_normal"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:layout_marginEnd="@dimen/margin_normal"
+                        android:layout_marginBottom="@dimen/margin_large"
+                        android:fontFamily="@font/oswald_bold"
+                        android:textAlignment="center"
+                        android:textColor="@color/android_green"
+                        tools:text="50,000" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card_todaydeath"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_normal"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:layout_marginEnd="@dimen/margin_normal"
+                android:layout_marginBottom="@dimen/margin_normal"
+                android:layout_weight="1"
+                app:cardElevation="2dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/TextAppearance.Divoc.CardHeadline"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_normal"
+                            android:layout_marginTop="@dimen/margin_normal"
+                            android:layout_marginEnd="@dimen/margin_normal"
+                            android:text="@string/todaydeaths"
+                            android:textColor="@color/red" />
+
+                        <TextView
+                            android:id="@+id/todaydeaths_textview"
+                            style="@style/TextAppearance.Divoc.SmallCardBody"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_normal"
+                            android:layout_marginTop="@dimen/margin_small"
+                            android:layout_marginEnd="@dimen/margin_normal"
+                            android:layout_marginBottom="@dimen/margin_large"
+                            android:fontFamily="@font/oswald_bold"
+                            android:textAlignment="center"
+                            android:textColor="@color/red"
+                            tools:text="12,780" />
+                    </LinearLayout>
                 </FrameLayout>
             </com.google.android.material.card.MaterialCardView>
         </LinearLayout>

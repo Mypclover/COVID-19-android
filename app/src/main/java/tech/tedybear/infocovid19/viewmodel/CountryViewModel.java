@@ -1,5 +1,7 @@
 package tech.tedybear.infocovid19.viewmodel;
 
+import android.widget.Toast;
+
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
@@ -33,7 +35,7 @@ public class CountryViewModel extends ViewModel {
 
             @Override
             public void onFailure(Call<CountryModel> call, Throwable t) {
-
+                // TODO: Here Comes the failure Message...
             }
         });
     }

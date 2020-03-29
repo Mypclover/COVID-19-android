@@ -12,17 +12,13 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import tech.tedybear.infocovid19.R;
-import tech.tedybear.infocovid19.adapter.HistoryListAdapter;
 import tech.tedybear.infocovid19.model.CountryModel;
-import tech.tedybear.infocovid19.model.RiwayatModel;
 import tech.tedybear.infocovid19.viewmodel.CountryViewModel;
-import tech.tedybear.infocovid19.viewmodel.RiwayatViewModel;
 
 /*
  * Created by Naveen Kumar on 3/23/20 5:33 PM
@@ -31,9 +27,13 @@ import tech.tedybear.infocovid19.viewmodel.RiwayatViewModel;
 
 public class RiwayatFragment extends Fragment {
 
-//    private HistoryListAdapter adapter;
+    //    private HistoryListAdapter adapter;
     private ProgressDialog mProgressApp;
-    TextView stats;
+    TextView confirmedstats;
+    TextView recoveredstats;
+    TextView deathstats;
+    TextView activestats;
+    TextView todaystats;
 
 
     public RiwayatFragment() {
@@ -51,20 +51,29 @@ public class RiwayatFragment extends Fragment {
         mProgressApp.setCancelable(false);
         mProgressApp.setMessage(display);
 
-        stats = view.findViewById(R.id.confirmed_textview);
+        confirmedstats = view.findViewById(R.id.confirmed_textview);
+        recoveredstats = view.findViewById(R.id.recovered_textview);
+        deathstats = view.findViewById(R.id.deaths_textview);
+        activestats = view.findViewById(R.id.active_textview);
+        todaystats = view.findViewById(R.id.todaydeaths_textview);
         CountryViewModel viewModel = new ViewModelProvider(this,
                 new ViewModelProvider.NewInstanceFactory()).get(CountryViewModel.class);
         viewModel.setCountryData();
         viewModel.getCountryData().observe(this, new Observer<CountryModel>() {
             @Override
             public void onChanged(CountryModel countryModel) {
-             mProgressApp.dismiss();
-//             stats.setText(countryModel.getCases());
+                mProgressApp.dismiss();
+                confirmedstats.setText(String.valueOf(countryModel.getCases()));
+                recoveredstats.setText(String.valueOf(countryModel.getRecovered()));
+                deathstats.setText(String.valueOf(countryModel.getDeaths()));
+                activestats.setText(String.valueOf(countryModel.getActive()));
+                todaystats.setText(String.valueOf(countryModel.getTodayDeaths()));
+
 
             }
         });
         return view;
-        }
-
-
     }
+
+
+}

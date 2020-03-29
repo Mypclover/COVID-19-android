@@ -15,8 +15,10 @@
     <string name="confirmed">Terkonfirmasi</string>
     <string name="recovered">Sembuh</string>
     <string name="deaths">Kematian</string>
-    <string name="active">Active</string>
+    <string name="todaydeaths">hari ini kematian</string>
+    <string name="active">aktif</string>
     <string name="keterangan">Ket :</string>
+    <string name="indiastats">Statistik tentang India: </string>
     <string name="world_summary_data">Ringkasan Data Dunia</string>
     <string name="from_corona">Dari Covid-19</string>
     <string name="last_update">Last Update</string>
