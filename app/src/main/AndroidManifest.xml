@@ -4,7 +4,7 @@
   -->
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="tech.tedybear.infocovid19">
+    package="com.naveentechworld.infocovid19">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -16,7 +16,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".activities.MainActivity">
+        <activity android:name="com.naveentechworld.infocovid19.activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -3,5 +3,5 @@
  * Copyright (c) 2020. All rights reserved.
  */
 
-rootProject.name='Info COVID19'
+rootProject.name='COVID-19 Tracker IN'
 include ':app'
