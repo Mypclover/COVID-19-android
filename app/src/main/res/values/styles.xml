@@ -1,0 +1,156 @@
+<!--
+  ~ Created by Naveen Kumar on 3/23/20 5:33 PM
+  ~ Copyright (c) 2020. All rights reserved.
+  -->
+
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="TextAppearance.Divoc.Body" parent="@style/TextAppearance.AppCompat.Body1">
+        <item name="android:textColor">?android:textColorSecondary</item>
+        <item name="fontFamily">@font/rubik</item>
+    </style>
+
+    <style name="TextAppearance.Divoc.CardHeadline" parent="@style/TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:textColor">?android:textColorSecondary</item>
+        <item name="fontFamily">@font/rubik_medium</item>
+    </style>
+
+    <style name="TextAppearance.Divoc.CardBody" parent="@style/TextAppearance.MaterialComponents.Headline2">
+        <item name="android:textColor">?android:textColorSecondary</item>
+        <item name="fontFamily">@font/archivo_black</item>
+    </style>
+    <style name="TextAppearance.Divoc.SmallCardBody" parent="@style/TextAppearance.MaterialComponents.Headline4">
+        <item name="android:textColor">?android:textColorSecondary</item>
+        <item name="fontFamily">@font/archivo_black</item>
+    </style>
+
+    <style name="TextAppearance.Divoc.ToolbarTitle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:fontFamily">@font/archivo_black</item>
+        <item name="android:textSize" tools:ignore="SpUsage">20dp</item>
+    </style>
+    <style name="TextAppearance.Divoc.ToolbarTitleExpanded" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:fontFamily">@font/archivo_black</item>
+        <item name="android:textSize" tools:ignore="SpUsage">30dp</item>
+    </style>
+
+    <!--- Stats-->
+    <style name="TextAppearance.Divoc.Stats.Heading" parent="@style/TextAppearance.MaterialComponents.Subtitle2">
+        <item name="android:fontFamily">@font/rubik_medium</item>
+    </style>
+    <style name="TextAppearance.Divoc.Stats.Body" parent="@style/TextAppearance.MaterialComponents.Caption">
+        <item name="android:fontFamily">@font/rubik</item>
+    </style>
+
+
+    <style name="TextAppearance.Divoc.SessionTitle" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="android:fontFamily">@font/rubik_medium</item>
+    </style>
+
+    <style name="TextAppearance.Divoc.CollapsingHeader" parent="@style/TextAppearance.MaterialComponents.Caption">
+        <item name="android:fontFamily">@font/rubik</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="TextAppearance.Divoc.CollapsingHeader.Label" parent="@style/TextAppearance.MaterialComponents.Subtitle2">
+        <item name="android:textColor">?android:textColorSecondary</item>
+        <item name="fontFamily">@font/rubik_medium</item>
+    </style>
+
+    <style name="TextAppearance.Divoc.ListSecondary" parent="@style/TextAppearance.AppCompat.Body1">
+        <item name="android:textColor">?android:textColorSecondary</item>
+    </style>
+
+    <style name="TextAppearance.Divoc.ReservationStatus" parent="@style/TextAppearance.Divoc.ListSecondary">
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="TextAppearance.Divoc.Tag" parent="@style/TextAppearance.Divoc.ListSecondary" />
+
+    <style name="TextAppearance.Divoc.AgendaTitle" parent="@style/TextAppearance.AppCompat.Body1">
+        <item name="android:fontFamily">@font/rubik</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.Divoc.SessionTitle.Display" parent="@style/TextAppearance.AppCompat.Display1">
+        <item name="android:fontFamily">@font/rubik</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+
+    <style name="TextAppearance.Divoc.Tab" parent="@style/TextAppearance.Design.Tab">
+        <item name="android:fontFamily">@font/rubik</item>
+        <item name="android:textStyle">bold</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="TextAppearance.Divoc.BottomNav" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:fontFamily">@font/rubik</item>
+        <item name="fontFamily">@font/rubik</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextAppearance.Divoc.H1" parent="@style/TextAppearance.AppCompat.Headline">
+        <item name="android:fontFamily">@font/rubik</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+
+    <style name="TextAppearance.Divoc.FlagH5" parent="@style/TextAppearance.MaterialComponents.Headline5">
+        <item name="android:fontFamily">@font/rubik</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+
+
+    <style name="TextAppearance.Divoc.Subhead" parent="@style/TextAppearance.Divoc.Body">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="TextAppearance.Divoc.SpeakerTitle" parent="@style/TextAppearance.Divoc.SessionTitle">
+        <item name="android:textColor">?colorPrimary</item>
+    </style>
+
+    <style name="TextAppearance.Divoc.FadingSnackbarAction" parent="@style/TextAppearance.AppCompat.Button">
+        <item name="android:textColor">@color/android_green</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/rubik</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="TextAppearance.Divoc.Links" parent="@style/TextAppearance.Divoc.Body">
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:textColorLink">?colorPrimary</item>
+        <item name="android:fontFamily">@font/rubik</item>
+    </style>
+
+    <style name="Widget.Divoc" parent="@android:style/Widget" />
+
+    <style name="Widget.Divoc.BottomNav" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="itemTextAppearanceActive">@style/TextAppearance.Divoc.BottomNav</item>
+        <item name="itemTextAppearanceInactive">@style/TextAppearance.Divoc.BottomNav</item>
+        <item name="labelVisibilityMode">labeled</item>
+    </style>
+
+    <style name="Widget.Divoc.AppBar" parent="Widget.MaterialComponents.AppBarLayout.Surface">
+        <item name="android:elevation">8dp</item>
+    </style>
+
+    <!--<style name="Widget.Divoc.Toolbar" parent="Widget.MaterialComponents.Toolbar">
+        <item name="popupTheme">@style/AppTheme.PopupTheme</item>
+        <item name="titleTextAppearance">@style/TextAppearance.Divoc.ToolbarTitle</item>
+    </style>-->
+
+</resources>
