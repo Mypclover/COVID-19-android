@@ -69,9 +69,21 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == R.id.action_change_setting) {
-            Intent mIntent = new Intent(Settings.ACTION_LOCALE_SETTINGS);
-            startActivity(mIntent);
+
+        switch (item.getItemId()) {
+
+            case R.id.action_change_setting:
+                Intent mIntent = new Intent(Settings.ACTION_LOCALE_SETTINGS);
+                startActivity(mIntent);
+                break;
+            case R.id.share:
+                Intent sendIntent = new Intent();
+                sendIntent.setAction(Intent.ACTION_SEND);
+                sendIntent.putExtra(Intent.EXTRA_TEXT,
+                        "Hey check out Go Corona app at: https://bit.ly/go-corona-app");
+                sendIntent.setType("text/plain");
+                startActivity(sendIntent);
+                break;
         }
         return super.onOptionsItemSelected(item);
     }

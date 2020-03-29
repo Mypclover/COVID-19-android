@@ -9,4 +9,6 @@
         android:icon="@drawable/ic_home_black_24dp"
         android:title="@string/change_languange_setting" />
 
+    <item android:id="@+id/share" android:title="Share App" />
+
 </menu>
