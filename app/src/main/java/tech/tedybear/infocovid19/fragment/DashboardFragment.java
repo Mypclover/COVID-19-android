@@ -39,32 +39,10 @@ public class DashboardFragment extends Fragment {
             }
         });
 
-        root.findViewById(R.id.retrofit).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String url = "https://square.github.io/retrofit/";
-
-                Intent i = new Intent(Intent.ACTION_VIEW);
-                i.setData(Uri.parse(url));
-                startActivity(i);
-            }
-        });
-
-        root.findViewById(R.id.gson).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String url = "https://github.com/google/gson";
-
-                Intent i = new Intent(Intent.ACTION_VIEW);
-                i.setData(Uri.parse(url));
-                startActivity(i);
-            }
-        });
-
         root.findViewById(R.id.mpchart).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String url = "https://github.com/PhilJay/MPAndroidChart";
+                String url = "mailto:naveencreater106@gmail.com";
 
                 Intent i = new Intent(Intent.ACTION_VIEW);
                 i.setData(Uri.parse(url));
@@ -76,7 +54,7 @@ public class DashboardFragment extends Fragment {
         root.findViewById(R.id.md).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String url = "https://github.com/material-components/material-components-android";
+                String url = "https://www.worldometers.info/coronavirus/";
 
                 Intent i = new Intent(Intent.ACTION_VIEW);
                 i.setData(Uri.parse(url));

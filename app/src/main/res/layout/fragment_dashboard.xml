@@ -22,34 +22,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:gravity="center"
-        android:text="Open Source Attributions"
+        android:text="Source  From"
         android:textSize="20sp"
         android:textStyle="bold" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/retrofit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:text="Retrofit"
-            android:textAllCaps="false" />
-
-        <Button
-            android:id="@+id/gson"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="20dp"
-            android:text="Gson"
-            android:textAllCaps="false" />
-
-    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -63,7 +38,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
-            android:text="Material-components"
+            android:text="Worldometer"
             android:textAllCaps="false" />
 
 
@@ -79,13 +54,20 @@
             android:id="@+id/mpchart"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="20dp"
-            android:text="MpAndroidChart"
+            android:text="Send Feedback"
             android:textAllCaps="false" />
 
 
     </LinearLayout>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="For Web Version"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/git_repo_link"
@@ -95,7 +77,7 @@
         android:layout_marginTop="40dp"
         android:layout_marginEnd="20dp"
         android:backgroundTint="@color/yellow"
-        android:text="launch Web Application"
+        android:text="Corona Tracker"
         android:textAllCaps="false" />
 
 
