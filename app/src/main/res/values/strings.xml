@@ -6,9 +6,9 @@
 <resources>
     <string name="app_name">Info COVID-19</string>
     <string name="ringkasan">Ringkasan</string>
-    <string name="indonesia">Indonesia</string>
+    <string name="indonesia">India</string>
     <string name="info">Info</string>
-    <string name="riwayat">Riwayat</string>
+    <string name="riwayat">Statistik</string>
     <string name="change_languange_setting">Change Languange Setting</string>
     <string name="title_dashboard">Info</string>
     <string name="not_update">Data Riwayat Belum Di Update</string>

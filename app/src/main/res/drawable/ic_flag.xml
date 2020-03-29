@@ -1,15 +1,17 @@
-<!--
-  ~ Created by Naveen Kumar on 3/23/20 5:33 PM
-  ~ Copyright (c) 2020. All rights reserved.
-  -->
-
+<?xml version="1.0" encoding="utf-8"?>
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:width="24dp"
-    android:height="24dp"
-    android:tint="#FFFFFF"
-    android:viewportWidth="24.0"
-    android:viewportHeight="24.0">
+    android:width="57.924dp"
+    android:height="57.924dp"
+    android:viewportWidth="57.924"
+    android:viewportHeight="57.924">
+
     <path
-        android:fillColor="#FF000000"
-        android:pathData="M14.4,6L14,4H5v17h2v-7h5.6l0.4,2h7V6z" />
+        android:fillColor="#FFFFFF"
+        android:pathData="M31,26.924h26.924C56.94,12.503,45.421,0.983,31,0V26.924z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M50.309,48.577c4.343-4.71,7.151-10.858,7.614-17.653H32.656L50.309,48.577z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M27,30.924V0C11.918,1.028,0,13.58,0,28.924c0,16.016,12.984,29,29,29 c6.99,0,13.396-2.479,18.401-6.599L27,30.924z" />
 </vector>
