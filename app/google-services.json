@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "388671615750",
+    "firebase_url": "https://corona-tracker-android.firebaseio.com",
+    "project_id": "corona-tracker-android",
+    "storage_bucket": "corona-tracker-android.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:388671615750:android:3e5ea9a1b9cbe655afa487",
+        "android_client_info": {
+          "package_name": "com.naveentechworld.infocovid19"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "388671615750-mg223f048s6620mtks5l0jha50offgo1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgh8GRSLcvSoPmJrik5moYdtUpft3Y9X8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "388671615750-mg223f048s6620mtks5l0jha50offgo1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -27,6 +27,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
 
-        assertEquals("tech.tedybear.infocovid19", appContext.getPackageName());
+        assertEquals("com.naveentechworld.infocovid19", appContext.getPackageName());
     }
 }
