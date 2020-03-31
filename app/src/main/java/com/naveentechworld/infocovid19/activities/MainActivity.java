@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                 Intent sendIntent = new Intent();
                 sendIntent.setAction(Intent.ACTION_SEND);
                 sendIntent.putExtra(Intent.EXTRA_TEXT,
-                        "Hey check out Go Corona app at: https://bit.ly/go-corona-app");
+                        "Hey check out Go Corona app at: https://bit.ly/corona-tracker-india");
                 sendIntent.setType("text/plain");
                 startActivity(sendIntent);
                 break;
